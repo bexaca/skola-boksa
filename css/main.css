@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@font-face {
+    font-family: 'Hesster';
+    src: url('../fonts/HessterOtf.otf');
+    src: url('../fonts/HessterTtf.ttf');
+}
+
+@font-face {
+    font-family: 'Evogria';
+    src: url('../fonts/Evogria.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-image: url("../img/hero-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.logo {
+    display: inline-block;
+    margin: 20px;
+    opacity: 0.6;
+    transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+header ul {
+    float: right;
+    padding: 40px 40px 15px 0;
+    border-bottom: 3px solid #2a83bd;
+}
+
+header ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #2a83bd;
+}
+
+.hero-heading {
+    position: absolute;
+    top: 30%;
+    right: 100px;
+    text-align: right;
+}
+
+.hero-heading h1 {
+    font-size: 70px;
+    color: white;
+    font-family: "Evogria";
+}
+
+.hero-heading h2 {
+    font-size: 120px;
+    color: #2a83bd;
+    font-family: "Hester";
+    font-style: italic;
+}
+
+#o-nama {
+    padding: 100px 0;
+    text-align: center;
+    background: #eaebe2;
+}
+
+#o-nama img {
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+
+#o-nama div {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#o-nama p {
+    padding-bottom: 10px;
+}
+
+#treneri {
+    overflow: hidden;
+    padding: 100px 0;
+    background: #eaebe2;
+}
+
+#treneri .image {
+    float: left;
+}
+
+#treneri .image img {
+    max-width: 100%;
+}
+
+#treneri .trainer {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#treneri .content-block {
+    float: right;
+    margin-right: 10%;
+}
+
+#treneri .content-block .text-block {
+    margin-right: 55px;
+    color: #688398;
+    float: right;
+}
+
+#treneri .content-block .image-block {
+    float: right;
+}
+
+#treninzi {
+    background: #eaebe2;
+    text-align: right
+}
+
+#treninzi img {
+    margin: 100px 0;
+    max-width: 100%;
+}
+
+#galerija {
+    background: #eaebe2;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+#galerija .image {
+    float: left;
+}
+
+#galerija .image img {
+    max-width: 100%;
+}
+
+#galerija .content-block {
+    float: right;
+    margin-right: 10%;
+}
+
+#galerija .content-block img {
+    margin: 25px;
+}
+
+#kontakt {
+    background: #eaebe2;
+    padding-top: 100px;
+}

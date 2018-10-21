@@ -59,14 +59,16 @@ header nav {
 }
 
 header nav.on-scroll {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     height: 70px;
 }
 
 header nav.on-scroll .logo {
-    opacity: 0;
-    pointer-events: none;
-    margin: 0;
+    margin: 20px;
+}
+
+header nav.on-scroll .logo img {
+    height: 40px;
 }
 
 .logo {
@@ -74,6 +76,11 @@ header nav.on-scroll .logo {
     margin: 20px;
     opacity: 0.6;
     transition: 0.2s ease-in-out;
+}
+
+.logo img{
+    transition: 0.2s ease-in-out;
+    height: 80px;
 }
 
 .logo:hover {

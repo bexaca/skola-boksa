@@ -7,7 +7,7 @@ jQuery(document).ready(function () {
         }, 1000, "swing");
     });
 
-    $('a[href*=\\#].top').on('click', function (event) {
+    $('a[href*=\\#].scroll-top').on('click', function (event) {
         event.preventDefault();
         $('html,body').animate({
             scrollTop: 0

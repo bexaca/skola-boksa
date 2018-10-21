@@ -163,6 +163,7 @@ header ul li a.hover {
 
 #treneri .image {
     float: left;
+    width: 50%;
 }
 
 #treneri .image img {
@@ -175,6 +176,7 @@ header ul li a.hover {
 }
 
 #treneri .content-block {
+    width: 35%;
     float: right;
     margin-right: 10%;
 }
@@ -211,7 +213,9 @@ header ul li a.hover {
 }
 
 #treninzi .image{
+    text-align: right;
     float: right;
+    width: 50%;
 }
 
 #treninzi img {
@@ -226,6 +230,7 @@ header ul li a.hover {
 
 #galerija .image {
     float: left;
+    width: 50%;
 }
 
 #galerija .image img {
@@ -233,8 +238,10 @@ header ul li a.hover {
 }
 
 #galerija .content-block {
+    text-align: right;
     float: right;
     margin-right: 10%;
+    width: 35%;
 }
 
 #galerija .content-block a {

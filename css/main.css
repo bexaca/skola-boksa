@@ -320,6 +320,10 @@ header ul li a.hover {
     margin-right: 0;
 }
 
+#galerija .content-block img{
+    max-width: 100%;
+}
+
 #kontakt {
     background: #eaebe2;
     padding-top: 100px;
@@ -456,6 +460,9 @@ header ul li a.hover {
         margin: 0;
         position: relative;
         z-index: 1;
+    }
+    #galerija .content-block a.second {
+        margin-right: 25px;
     }
     #kontakt .image {
         position: absolute;

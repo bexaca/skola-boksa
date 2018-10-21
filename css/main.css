@@ -183,12 +183,31 @@ header ul li a.hover {
 }
 
 #treninzi {
+    overflow: hidden;
     background: #eaebe2;
-    text-align: right
+    padding: 100px 0;
+}
+
+#treninzi .content-block{
+    float: left;
+    margin-left: 10%;
+    width: 35%;
+}
+
+#treninzi h5 {
+    color: #2a83bd;
+    margin-bottom: 10px;
+}
+
+#treninzi p {
+    margin-bottom: 25px;
+}
+
+#treninzi .image{
+    float: right;
 }
 
 #treninzi img {
-    margin: 100px 0;
     max-width: 100%;
 }
 

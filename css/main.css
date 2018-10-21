@@ -65,6 +65,7 @@
     float: right;
     margin: 30px 30px 12px 0;
     transition: 0.2s ease-in-out;
+    display: none;
 }
 
 .on-scroll #hamb {
@@ -370,6 +371,9 @@ header ul li a.hover {
 }
 
 @media (max-width: 768px) {
+    #hamb {
+        display: block;
+    }
     header {
         height: 400px;
         background-position: top;
@@ -434,6 +438,6 @@ header ul li a.hover {
         opacity: 0.2;
     }
     #kontakt .content-block{
-        
+
     }
 }

@@ -10,6 +10,7 @@
     <title>Škola boksa Zbućnović</title>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
     <meta name="theme-color" content="#2a83bd">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
 </head>
 
 <body>
@@ -110,25 +111,50 @@
             </div>
             <div class="content-block">
                 <div class="gallery">
-                    <img src="img/trener.jpg" alt="gallery">
-                    <img src="img/trener.jpg" alt="gallery">
+                    <a data-fancybox="gallery" href="img/trener.jpg">
+                        <img src="img/trener.jpg" alt="gallery">
+                    </a>
+                    <a data-fancybox="gallery" href="img/trener.jpg">
+                        <img src="img/trener.jpg" alt="gallery">
+                    </a>
                 </div>
                 <div class="gallery">
-                    <img src="img/trener.jpg" alt="gallery">
-                    <img src="img/trener.jpg" alt="gallery">
+                    <a data-fancybox="gallery" href="img/trener.jpg">
+                        <img src="img/trener.jpg" alt="gallery">
+                    </a>
+                    <a data-fancybox="gallery" href="img/trener.jpg">
+                        <img src="img/trener.jpg" alt="gallery">
+                    </a>
                 </div>
                 <div class="gallery">
-                    <img src="img/trener.jpg" alt="gallery">
-                    <img src="img/trener.jpg" alt="gallery">
+                    <a data-fancybox="gallery" href="img/trener.jpg">
+                        <img src="img/trener.jpg" alt="gallery">
+                    </a>
+                    <a data-fancybox="gallery" href="img/trener.jpg">
+                        <img src="img/trener.jpg" alt="gallery">
+                    </a>
                 </div>
             </div>
         </div>
         <div id="kontakt">
-            <img src="img/kontakt.png" alt="kontakt">
+            <div class="image">
+                <img src="img/kontakt.png" alt="kontakt">
+            </div>
+            <div class="content-block">
+                <form action="">
+                    <input type="text" placeholder="Ime i prezime">
+                    <input type="text" placeholder="Broj telefona">
+                    <input type="email" placeholder="Email">
+                    <textarea name="tekst" cols="30" rows="10" placeholder="Poruka"></textarea>
+                    <button type="submit">Pošalji</button>
+                </form>
+            </div>
         </div>
+        <a href="#0" class="top">Top</a>
     </main>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
 </body>
 

@@ -16,6 +16,61 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*--------------------------------------------------- HAMBURGER MENU ------------------------------------------------------------*/
+
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(35, 51, 55, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+    font-family: open_sansregular;
+    text-transform: uppercase;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f4f4f4;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#hamb {
+    width: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f4f4f4;
+    float: right;
+    margin: 30px 30px 12px 0;
+    transition: 0.2s ease-in-out;
+}
+
+.on-scroll #hamb {
+    margin: 20px 0 12px 0;
+}
+
 main {
     position: relative;
 }
@@ -35,7 +90,7 @@ main {
     transition: 0.2s ease-in-out;
 }
 
-.top.show{
+.top.show {
     opacity: 1;
     pointer-events: all;
 }
@@ -78,7 +133,7 @@ header nav.on-scroll .logo img {
     transition: 0.2s ease-in-out;
 }
 
-.logo img{
+.logo img {
     transition: 0.2s ease-in-out;
     height: 80px;
 }
@@ -139,6 +194,7 @@ header ul li a.hover {
     padding: 100px 0;
     text-align: center;
     background: #eaebe2;
+    position: relative;
 }
 
 #o-nama img {
@@ -159,6 +215,7 @@ header ul li a.hover {
     overflow: hidden;
     padding: 100px 0;
     background: #eaebe2;
+    position: relative;
 }
 
 #treneri .image {
@@ -195,9 +252,10 @@ header ul li a.hover {
     overflow: hidden;
     background: #eaebe2;
     padding: 100px 0;
+    position: relative;
 }
 
-#treninzi .content-block{
+#treninzi .content-block {
     float: left;
     margin-left: 10%;
     width: 35%;
@@ -212,7 +270,7 @@ header ul li a.hover {
     margin-bottom: 25px;
 }
 
-#treninzi .image{
+#treninzi .image {
     text-align: right;
     float: right;
     width: 50%;
@@ -226,6 +284,7 @@ header ul li a.hover {
     background: #eaebe2;
     overflow: hidden;
     padding: 100px 0;
+    position: relative;
 }
 
 #galerija .image {
@@ -253,6 +312,7 @@ header ul li a.hover {
     background: #eaebe2;
     padding-top: 100px;
     overflow: hidden;
+    position: relative;
 }
 
 #kontakt .image {
@@ -270,7 +330,7 @@ header ul li a.hover {
     width: 30%;
 }
 
-#kontakt .content-block input{
+#kontakt .content-block input {
     display: block;
     width: 100%;
     background: none;
@@ -280,7 +340,7 @@ header ul li a.hover {
     margin-bottom: 5px;
 }
 
-#kontakt .content-block textarea{
+#kontakt .content-block textarea {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -292,7 +352,7 @@ header ul li a.hover {
     resize: none;
 }
 
-#kontakt .content-block button{
+#kontakt .content-block button {
     background: none;
     border: 2px solid #2a83bd;
     padding: 10px;
@@ -304,7 +364,73 @@ header ul li a.hover {
     cursor: pointer;
 }
 
-#kontakt .content-block button:hover{
+#kontakt .content-block button:hover {
     background: #2a83bd;
     color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 400px;
+        background-position: top;
+    }
+    header nav ul {
+        display: none;
+    }
+    .hero-heading {
+        width: 100%;
+        right: 0;
+    }
+    .hero-heading h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .hero-heading h2 {
+        font-size: 65px;
+        text-align: center;
+    }
+    #o-nama div {
+        width: 90%;
+    }
+    #treneri .image {
+        position: absolute;
+        opacity: 0.2;
+        width: 100%;
+        z-index: 0;
+    }
+    #treneri .content-block {
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    #treninzi .image {
+        width: 100%;
+        position: absolute;
+        opacity: 0.2;
+        z-index: 0;
+        top: 0;
+    }
+    #treninzi .content-block {
+        width: auto;
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #galerija .image {
+        position: absolute;
+        width: 100%;
+        opacity: 0.2;
+        text-align: center;
+    }
+    #galerija .content-block {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    #kontakt .image {
+        position: absolute;
+        width: 100%;
+        opacity: 0.2;
+    }
 }

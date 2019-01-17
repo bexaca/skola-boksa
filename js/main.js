@@ -72,24 +72,13 @@ jQuery(document).ready(function () {
 
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    $("body").css({
-        height: $(window).height(),
-        overflow: 'visible'
-    });
-    $("html").css({
-        overflow: 'hidden'
-    });
-
 }
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-    $("body").css({
-        height: $(window).height(),
-        overflow: 'visible'
-    });
-    $("html").css({
-        overflow: 'visible'
-    });
 }
 
+$("body").css({
+    height: $(window).height()
+});
+console.log('asdasdas');

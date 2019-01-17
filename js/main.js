@@ -78,7 +78,6 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-$("html, body, #wrapper").css({
+$("body").css({
     height: $(window).height()
 });
-console.log('asdasdas');

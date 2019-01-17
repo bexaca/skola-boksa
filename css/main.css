@@ -424,9 +424,18 @@ header ul li a.hover {
         z-index: 0;
         bottom: 0;
     }
+    #treneri .content-block .image-block {
+        text-align: center;
+        float: none;
+    }
+    #treneri .content-block .text-block {
+        float: none;
+        text-align: center;
+        margin-right: 0;
+    }
     #treneri .content-block {
         width: 100%;
-        margin-right: 20px;
+        margin-right: 0px;
         margin-left: 20px;
         position: relative;
         z-index: 1;

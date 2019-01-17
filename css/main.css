@@ -490,10 +490,3 @@ header ul li a.hover {
     }
 }
 
-html {
-    overflow: hidden;
-}
-
-body {
-    overflow: scroll;
-}

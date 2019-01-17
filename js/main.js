@@ -81,3 +81,4 @@ function closeNav() {
 $("html, body, #wrapper").css({
     height: $(window).height()
 });
+console.log('test');

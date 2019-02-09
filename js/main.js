@@ -1,6 +1,7 @@
 jQuery(document).ready(function () {
 
     $('a[href*=\\#].scroll').on('click', function (event) {
+        console.log('test')
         event.preventDefault();
         $('html,body').animate({
             scrollTop: $(this.hash).offset().top
@@ -66,7 +67,6 @@ jQuery(document).ready(function () {
             $('nav ul li a').removeClass('hover');
         }
     });
-
     
 });
 
@@ -77,7 +77,3 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-
-$("body").css({
-    height: $(window).height()
-});

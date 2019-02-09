@@ -17,7 +17,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #EAEBE2;
 }
 
@@ -33,7 +33,6 @@ body{
     background-color: rgba(35, 51, 55, 0.9);
     overflow-y: hidden;
     transition: 0.5s;
-    font-family: open_sansregular;
     text-transform: uppercase;
 }
 
@@ -51,7 +50,6 @@ body{
     font-size: 36px;
     color: #f4f4f4;
     display: block;
-    transition: 0.3s;
 }
 
 .overlay .closebtn {
@@ -85,7 +83,7 @@ main {
 
 .top {
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
     z-index: 1;
     background: #2a83bd;
@@ -249,11 +247,19 @@ header ul li a.hover {
 #treneri .content-block .text-block {
     margin-right: 55px;
     color: #688398;
-    float: right;
+    float: left;
 }
 
 #treneri .content-block .image-block {
     float: right;
+}
+
+#treneri .text-block h3, #treneri .text-block h4 {
+	margin-bottom: 10px;
+}
+
+#treneri .text-block h3 {
+	margin-top: 20px;
 }
 
 #treninzi {
@@ -385,6 +391,17 @@ header ul li a.hover {
     color: white;
 }
 
+footer {
+	background: #2a83bd;
+	margin-top: 15px;
+}
+
+footer p {
+	padding: 10px 0;
+	text-align: center;	
+	color: white;
+}
+
 @media (max-width: 1420px) {
     main{
         width: 100%;
@@ -424,7 +441,14 @@ header ul li a.hover {
         z-index: 0;
         bottom: 0;
     }
-    #treneri .content-block .image-block {
+    #treneri .content-block {
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+        position: relative;
+        z-index: 1;
+    }
+	#treneri .content-block .image-block {
         text-align: center;
         float: none;
     }
@@ -432,13 +456,6 @@ header ul li a.hover {
         float: none;
         text-align: center;
         margin-right: 0;
-    }
-    #treneri .content-block {
-        width: 100%;
-        margin-right: 0px;
-        margin-left: 20px;
-        position: relative;
-        z-index: 1;
     }
     #treninzi .image {
         width: 100%;
@@ -488,12 +505,4 @@ header ul li a.hover {
         z-index: 1;
         text-align: center;
     }
-}
-
-html {
-    overflow: hidden;
-}
-
-body {
-    overflow: scroll;
 }
